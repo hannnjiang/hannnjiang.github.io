@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jiang Han's Homepage</title>
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 30%;
+                font-family: Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            /*page title*/
+            .parallax {
+                background-image: url("https://img.tukuppt.com//ad_preview/00/09/88/5c9922aaad786.jpg!/fw/980");
+                min-height: 100%;
+                position: relative;
+                opacity: 0.65;
+                background-attachment: fixed;
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .caption {
+                position: absolute;
+                left: 0;
+                top: 30%;
+                width: 100%;
+                text-align: center;
+                color: #000;
+                font-size: 40px;
+            }
+
+            .caption span.cap_border {
+                /*background-color: rgb(204, 213, 174);*/
+                color: black;
+                padding: 18px;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 5px;
+            }
+
+            /*navigation bar*/
+            .container {
+                position: absolute;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .topnav {
+                overflow: hidden;
+                background-color: rgba(7, 128, 37, 0.74);
+                height: 40px;
+            }
+
+            .topnav a {
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: auto;
+                font-size: 20px;
+                width: 20px;
+                line-height: 36px;
+                
+            }
+
+            .topnav a:hover {
+                background-color: rgb(204,213,174);
+                color: black;
+            }
+
+            /*page body part*/
+            .page {
+                height: 740px;
+                background-color: rgb(245,250,224);
+                font-size: 36px;
+            }
+
+            .card {
+                background: white;
+                margin-bottom: 15px;
+                margin-right: 15px;
+                box-shadow: 0 10px 12px rgb(0 0 0 / 20%);
+                border-radius: 15px;
+                
+            }
+
+            .left_intro {
+                padding: 50px 50px;
+                width: 80%;
+                margin: 10px 10px 10px 50px;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .circle--square {
+                border-radius: 50%;
+            }
+
+            p.school::before {
+                content: '';
+                display: inline-block;
+                background-image: url("https://www.polyu.edu.hk/-/media/department/home/content/about-polyu/university-identity/logo_1200x672_with-bg.jpg?bc=ffffff&h=672&w=1200&hash=1926F740ED2625DA22965BBE21D46D7A");
+                background-size: 57.1px 31.9px;
+                width: 57.1px;
+                height: 31.9px;
+            }
+
+            .right_up {
+                width: 90%;
+                position: relative;
+                top: 20px;
+                padding: 10px 10px;
+            }
+
+            .right_bottom {
+                width: 90%;
+                margin: 50px 0;
+                padding: 10px;
+            }
+
+            .bold-letter::first-letter {
+                font-size: 200%;
+            }
+
+            .table {
+                width: 100%;
+            }
+/*
+            td {
+                border: 2px solid black;
+                padding: 10px 10px;
+            }
+*/
+        </style>
+    </head>
+
+    <body>
+        <div class="parallax">
+            <div class="caption">
+                <span class="cap_border">JIANG Han's Personal Homepage</span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="topnav">
+                <a href="#home">Home</a>
+                <a href="./perosnal_intro.html">Personal Introduction</a>
+                <a href="./CV.pdf" target="_blank">Curriculum Vitae</a>
+                
+            </div>
+        </div>
+        
+        <div class="page" id="home">
+            <br>
+            <table class="table">
+                <tr>
+                    <td rowspan="2" style="width:50%;">
+                        <div class="left_intro card"> <!--记得参考下Linkedin-->
+                            <div style="text-align:center;">
+                                <img class="circle--square" src="http://y.qichejiashi.com/tupian/upload/70567147.jpg" alt="my_pic" width="200px" line-height="50%">
+                            </div>
+                            <div class="name" style="text-align:center;">
+                                <h5>Jiang Han 蒋晗</h5>
+                            </div>
+                            <hr>
+                            <div class="uni_grade" style="font-size:5px;">
+                                <br>
+                                <p class="school" style="font-size:15px;color:grey;vertical-align:middle;overflow:hidden;">The Hong Kong Polytechnic University</p>
+                            </div>
+                            <!--这部分用img_split或者map navi做小图标 跳转至相对应的界面：facebook instagram linkedin-->
+                            <div>
+                                <br>
+                                <div  style="text-align:center;border:5px dotted rgb(148, 206, 61);border-radius:25px;">
+                                    <p style="font-size:30px;font-weight:bold;">Follow me on</p>
+                                    <ul id="navlist">
+                                        <a href="https://github.com/"><img width="93" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="github"></a>
+                                        <a href="https://www.linkedin.com/"><img width="91" class="circle--square" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC" alt="linked"></a>
+                                        <a href="https://zh-hk.facebook.com/"><img width="100" src="https://csktribes.org/images/fb.jpg" alt="fb"></a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="right_up card">
+                            <h6>A brief introduction of myself~</h6>
+                            <hr>
+                            <p class="bold-letter">Hello everyone! My name is Jiang Han. I am a Year 3 CBS student who is taking COMP as my minor subject. This is my personal homepage. Thank you so much for coming:)</p>
+                            <br>
+                            <p style="color:rgb(158, 157, 157);">NOTE: Check the Personal Introduction page to know more about me!</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="right_bottom card">
+                            <p class="bold-letter">This is a video of my school -- PolyU, please check how beautiful it is!</p>
+                            <video width="400" height="300" controls>
+                                <source src="./PolyU_Campus_Aeria_View.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+    </body>
+</html>
